@@ -19,12 +19,12 @@ try:
         for m in range(1, 9):
             if m == columna or n == fila:
                 print("*", end=" ")
+            elif (n % 2 == 0 and m % 2 != 0) or (n % 2 != 0 and m % 2 == 0):
+                print("N", end=" ")
             else:
-                if (n % 2 == 0 and m % 2 != 0) or (n % 2 != 0 and m % 2 == 0):
-                    print("N", end=" ")
-                else:
-                    print("B", end=" ")
+                print("B", end=" ")
         print("")
 
 except:
     print("Error")
+
